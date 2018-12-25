@@ -1,0 +1,67 @@
+$white: #fff;
+
+
+.services {
+	width: 100%;
+	min-height: 1000px;
+	background: url(../img/services-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		width: 80%;
+		height: inherit;
+		margin: 0 auto;
+	}
+	&__paragraph {
+		color: $white;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 58px;
+		text-transform: uppercase;
+		margin-top: -28px;
+		.lobortis {
+			color: #ec9da2;
+		}
+	}
+	&__small-paragraph {
+		color: #ffcccf;
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: -15px;
+	}
+	&__middle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-wrap: wrap;
+		margin-top: 80px;
+	}
+	&__service-box {
+		margin-left: 7.5px;
+		margin-right: 7.5px;
+	}
+}
+
+@media (min-width: 460px)and(max-width: 688px) {
+	.services {
+		min-height: 2500px;
+		&__service-box {
+			margin-top: 15px;
+		}
+	}
+}
+
+@media (min-width: 689px)and(max-width: 1374px) {
+	.services {
+		min-height: 1500px;
+		&__service-box {
+			margin-top: 15px;
+		}
+	}
+}  

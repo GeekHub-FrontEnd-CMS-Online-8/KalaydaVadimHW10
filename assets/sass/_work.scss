@@ -1,0 +1,169 @@
+$button-transition: 0.3s;
+
+
+.work {
+	width: 100%;
+	min-height: 1150px;
+	background-image: url(../img/work-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__small-paragraph {
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: -15px;
+	}
+	&__middle {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100px;
+		&-left {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: 50%;
+			height: 100%;
+		}
+		&-right {
+			display: flex;
+			justify-content: flex-end;
+			width: 50%;
+			height: 100%;
+		}
+	}
+	&__hr {
+		width: 100%;
+		border: 1px solid #94b963;
+	}
+	&__h3 {
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 24px;
+		margin-top: 35px;
+	}
+	&__button {
+		transition: $button-transition;
+		cursor: pointer;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 24px;
+		margin-top: 32px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.button-all {
+		width: 40px;
+		height: 40px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: transparent;
+		&:hover {
+			background: #74c7d5;
+		}
+		&:active {
+			background: #5EB1BF;
+		}
+	}
+	.button-photography {
+		width: 110px;
+		height: 40px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: transparent;
+		&:hover {
+			background: #f5c149;
+		}
+		&:active {
+			background: #DFAB33;
+		} 
+	}
+	.button-logo-design {
+		width: 110px;
+		height: 40px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: transparent;
+		&:hover {
+			background: #df5c64;
+		}
+		&:active {
+			background: #CF4C54;
+		}
+	}
+	.button-web-design {
+		width: 110px;
+		height: 40px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background: transparent;
+		&:hover {
+			background: #91778e;
+		}
+		&:active {
+			background: #846A81;
+		}
+	}
+	&__bottom {
+		width: 92%;
+	}
+	&__item {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 460px)and(max-width: 600px) {
+	.work {
+		min-height: 2850px;
+		&__h3 {
+			margin-left: 70%;
+			margin-top: 0;
+		}
+		&__button {
+			margin-left: 33px;
+		}
+		.button-logo-design {
+			height: 52px;
+		}
+		.button-web-design {
+			height: 52px;
+		}
+	}
+}
+
+@media (min-width: 601px)and(max-width: 765px) {
+	.work {
+		min-height: 2850px;
+		.button-logo-design {
+			height: 52px;
+		}
+		.button-web-design {
+			height: 52px;
+		}
+	}
+}
+
+@media (min-width: 766px)and(max-width: 1536px) {
+	.work {
+		min-height: 1750px;
+		.button-logo-design {
+			height: 52px;
+		}
+		.button-web-design {
+			height: 52px;
+		}
+	}
+}
