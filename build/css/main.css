@@ -1101,6 +1101,9 @@ a {
   .contact-map {
     margin-left: 250px;
     margin-top: -240px; }
+  .contact .google-map {
+    width: 260px;
+    height: 220px; }
   .contact .right-h3 {
     margin-left: 10px; }
   .contact .form {
