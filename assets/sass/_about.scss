@@ -38,11 +38,37 @@ $white: #fff;
 		margin-top: 70px;
 	}
 	&__box {
+		position: relative;
 		width: 260px;
 		height: 380px;
 		background-color: rgba(77,63,75, .8);
 		margin-left: 10px;
 		margin-right: 10px;
+		&:hover .about-darkbg1 {
+			opacity: 0;
+		}
+	}
+	&__box2 {
+		position: relative;
+		width: 260px;
+		height: 380px;
+		background-color: rgba(77,63,75, .8);
+		margin-left: 10px;
+		margin-right: 10px;
+		&:hover .about-darkbg {
+			opacity: 0;
+		}
+	}
+	&-darkbg {
+		position: absolute;
+		height: 380px;
+		width: 260px;
+	}
+	&-darkbg1 {
+		position: absolute;
+		height: 380px;
+		width: 260px;
+		margin-left: -49px;
 	}
 	.box-user {
 		margin-top: 45px;
