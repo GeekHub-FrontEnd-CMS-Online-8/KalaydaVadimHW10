@@ -970,11 +970,47 @@ a {
     .work .button-web-design:active {
       background: #846A81; }
   .work__bottom {
-    width: 92%; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 91%; }
   .work__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 260px;
+    height: 250px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px; }
+    .work__item:hover .dark-bg {
+      opacity: 1; }
+    .work__item:hover .work__item-button {
+      opacity: 1; }
+  .work .dark-bg {
+    opacity: 0;
+    width: 260px;
+    height: 200px;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.3s; }
+  .work__item-button {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: -15px; }
+    .work__item-button:hover {
+      background: rgba(0, 0, 0, 0.3); }
+    .work__item-button:active {
+      background: rgba(255, 255, 255, 0.5); }
 
 @media (min-width: 460px) and (max-width: 600px) {
   .work {
